@@ -20,4 +20,3 @@ RUN cd /tmp/ruby-install-0.5.0/ && make install
 RUN ruby-install ruby 2.2.2
 
 RUN echo 'chruby 2.2.2' >> /root/.bashrc
-CMD ["echo", "'Thats a small change to test automated builds'"]
