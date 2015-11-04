@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 MAINTAINER Jikku Jose <jikkujose@gmail.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update -yq
 RUN apt-get install -yq wget
 RUN apt-get install -yq make
