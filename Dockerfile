@@ -24,3 +24,4 @@ RUN ruby-install ruby 2.2.2
 
 RUN echo 'chruby 2.2.2' >> /root/.bashrc
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+RUN ["gem", "install", "bundler"]
