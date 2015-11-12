@@ -26,4 +26,6 @@ RUN ruby-install ruby 2.2.2
 RUN echo 'chruby 2.2.2' >> /root/.bashrc
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
-RUN ["/opt/rubies/ruby-2.2.2/bin/gem", "install", "bundler"]
+ENV PATH /opt/rubies/ruby-2.2.2/bin:$PATH
+
+RUN gem install bundler
