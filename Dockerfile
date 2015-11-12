@@ -7,6 +7,7 @@ RUN apt-get update -yq
 RUN apt-get install -yq wget
 RUN apt-get install -yq make
 RUN apt-get install -yq vim
+RUN apt-get install -yq curl
 
 RUN wget -O /tmp/chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
 RUN cd /tmp && tar -xzvf chruby-0.3.9.tar.gz
